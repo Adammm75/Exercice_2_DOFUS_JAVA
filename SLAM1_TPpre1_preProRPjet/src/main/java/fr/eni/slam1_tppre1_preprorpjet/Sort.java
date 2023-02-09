@@ -39,12 +39,17 @@ public class Sort {
         C'est à dire que l'argument "stats" prend en compte les statistiques du personnage.
         Exemple, si affDegatSort(0,500,200,100) est appelé et que le sort est de l'élément "terre" :
         -> on appelera calculDegat(500, this.degatMin).
-     
+        
         */
+        this.element == "feu";
+        this.feu(this.degatMin + this.degatMax);
+        
+        
     }
     public int calculDegat(int stats, int degat)
     {
-        // Retourne les dégât totaux -> degat + degat * (stats/100)
+        int DegatFinal= degat + degat *(stats/100);
+        
         return 0;
     }
 }
